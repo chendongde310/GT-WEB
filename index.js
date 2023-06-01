@@ -1,6 +1,7 @@
 const { Translate } = require('@google-cloud/translate').v2;
-const translate = new Translate();
-
+const translate = new Translate({
+    projectId: 'copper-gear-388512', // Replace with your project ID
+});
 
 const fs = require('fs').promises;
 const path = require('path');
